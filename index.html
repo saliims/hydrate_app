@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydration Reminder</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #reminder-container {
+        text-align: center;
+      }
+
+      #dismiss-button {
+        padding: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reminder-container">
+      <h1>Stay Hydrated!</h1>
+      <p>It's time to drink water.</p>
+      <button id="dismiss-button">Dismiss</button>
+    </div>
+
+    <script>
+      // You can add JavaScript code here to handle button clicks or other interactions.
+      // For example, you may want to close the window when the "Dismiss" button is clicked.
+      document
+        .getElementById("dismiss-button")
+        .addEventListener("click", () => {
+          window.close();
+        });
+    </script>
+  </body>
+</html>
